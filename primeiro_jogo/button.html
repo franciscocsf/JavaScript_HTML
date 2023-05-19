@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text">
+<button>teste</button>
+
+<script>
+
+    var senha = 15032003;
+    var input = document.querySelector("input");
+    input.focus();
+    var botao = document.querySelector("button");
+    
+
+    function aviso(params) {
+        
+        if (input.value == senha) {
+            alert("Login efeituado");
+        } else {
+            alert("Senha inválida!")
+        }
+        
+        input.value = ""; //Limpa a caixa após a verificação da senha
+        input.focus(); //Caixa fica piscando 
+    }
+
+    butao = aviso;
+    botao.onclick = aviso;
+
+</script>
+
+</body>
+</html>
